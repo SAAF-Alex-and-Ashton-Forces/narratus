@@ -1,0 +1,18 @@
+<h1>Show Card</h1>
+
+<ul>
+
+  <li>
+    <strong>Body:</strong>
+    <%= @card.body %>
+  </li>
+
+  <li>
+    <strong>Hooks:</strong>
+    <%= @card.hooks %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.card_path(@conn, :edit, @card) %></span>
+<span><%= link "Back", to: Routes.card_path(@conn, :index) %></span>
