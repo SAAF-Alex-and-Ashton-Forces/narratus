@@ -1,6 +1,8 @@
 defmodule NarratusWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :narratus
 
+  socket "/live", Phoenix.LiveView.Socket
+
   socket "/socket", NarratusWeb.UserSocket,
     websocket: true,
     longpoll: false

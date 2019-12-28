@@ -10,6 +10,11 @@ use Mix.Config
 config :narratus,
   ecto_repos: [Narratus.Repo]
 
+config :narratus, NarratusWeb.Endpoint,
+  live_view: [
+    signing_salt: "LQgpE6pJWYUpcU21bZGakGNAB7iolZdb"
+  ]
+
 # Configures the endpoint
 config :narratus, NarratusWeb.Endpoint,
   url: [host: "localhost"],
