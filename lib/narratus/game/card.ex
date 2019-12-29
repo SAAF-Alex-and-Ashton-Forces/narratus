@@ -8,7 +8,9 @@ defmodule Narratus.Game.Card do
     field :parent, :id
     field :board, :id
     field :author, :id
-
+    
+    has_one :boards, Narratus.Game.Board
+    
     timestamps()
   end
 
