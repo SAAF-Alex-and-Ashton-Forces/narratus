@@ -18,7 +18,10 @@ defmodule NarratusWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
-    
+
+    resources "/board", BoardController
+    resources "/card", CardController
+    resources "/user", UserController
   end
 
   # Other scopes may use custom stacks.
